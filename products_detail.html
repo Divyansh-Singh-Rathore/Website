@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional level E-commmerce website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+
+<body>
+    <header>
+        <section id="navlogo">
+            <nav>
+                <h1>Budget Shop</h1>
+                <ul id="navbar">
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <!-----------------------   Product Image and its detailing   -------------------------->
+        <div id="prodImg&Details">
+            <div class="mainProdImage" id="bigPic">
+                <img src="img/products/f1.jpg" class="prodImage" alt="">
+            </div>
+            <div class="smallGroupProdImages" onclick="changeImage(this)">
+                <img src="img/products/f1.jpg" alt="">
+            </div>
+            <div class="smallGroupProdImages" onclick="changeImage(this)">
+                <img src="img/products/f2.jpg" alt="">
+            </div>
+            <div class="smallGroupProdImages" onclick="changeImage(this)">
+                <img src="img/products/f3.jpg" alt="">
+            </div>
+            <div class="smallGroupProdImages" onclick="changeImage(this)">
+                <img src="img/products/f4.jpg" alt="">
+            </div>
+            <div class="prodDetails">
+                <div class="heading">
+                    <h5>Home/T-Shirt</h5>
+                    <h2>Mens's Fashion T-Shirt</h2>
+                    <h4>₹499/-</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <input type="number" value="1">
+                    <button>Add To Cart</button>
+                    <h3>Product Details</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit accusantium
+                        fuga quasi
+                        consequatur, molestias ea vero necessitatibus odit ullam earum enim deserunt
+                        repudiandae commodi
+                        optio dolorem perferendis quaerat, laborum mollitia. Mollitia beatae quia aliquid
+                        debitis nihil
+                        molestiae magni ipsam maxime. Excepturi quia est error soluta nihil? Culpa quidem
+                        nesciunt
+                        possimus eligendi dolorum perspiciatis eveniet iure quia, saepe quaerat facere eum?
+                    </p>
+                </div>
+            </div>
+            <section id="featured_products" class="featuredprod">
+                <h2>Featured Products</h2>
+                <p>Summer Collection New Modern Design</p>
+            </section>
+            <section id="featured_products_images">
+                <div class="pro_images">
+                    <div class="clothes" id="featuredprodimg">
+                        <img src="img/products/f4.jpg" alt="">
+                        <div class="prod_description">
+                            <span>Allen Solly</span>
+                            <h5>Floral Printed Shirt</h5>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>₹499</h4>
+                        </div>
+                        <div class="products_cart">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="clothes">
+                        <img src="img/products/f5.jpg" alt="">
+                        <div class="prod_description">
+                            <span>Peter England</span>
+                            <h5>Floral Printed Shirt</h5>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>₹599</h4>
+                        </div>
+                        <div class="products_cart">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="clothes">
+                        <img src="img/products/f6.jpg" alt="">
+                        <div class="prod_description">
+                            <span>h&m</span>
+                            <h5>Jacket</h5>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>₹999</h4>
+                        </div>
+                        <div class="products_cart">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="clothes">
+                        <img src="img/products/f7.jpg" alt="">
+                        <div class="prod_description">
+                            <span>Mast & Habour</span>
+                            <h5>Floral Printed Pants</h5>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>₹699</h4>
+                        </div>
+                        <div class="products_cart">
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-------------- Bottom banner --------------->
+        <section id=bottom_banner>
+            <div class="buttom_banner_lines">
+                <h2>Sign Up On Our Website</h2>
+                <p>Get E-mail updates about our latest updates and <span> special offers. </span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button>Sign Up</button>
+            </div>
+        </section>
+    </main>
+    <!--------------- Footer Content  ----------------->
+    <footer>
+        <div class="footer_content">
+            <div class="columns">
+                <div class="footerLogo">
+                    <h1>Budget Shop</h1>
+                </div>
+                <div class="contactsInfo" id="contact">
+                    <h4>Contact</h4>
+                    <p><strong>Address: </strong>B-08 Block- A Rajouri Garden, New Delhi </p>
+                    <p><strong>Phone: </strong>(+91) 1234567890</p>
+                    <p><strong>Shop Timing: </strong>11:00 AM - 9:00 PM (7-Days open)</p>
+                </div>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="aboutInfo">
+                    <h4>About</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="myAccountInfo">
+                    <h4>My Account</h4>
+                    <a href="#">Sign In</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wish List</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help</a>
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="installingApp">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="appsIcon">
+                        <img src="img/pay/app.jpg" alt="">
+                        <img src="img/pay/play.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="img/pay/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="forCopyright">
+            <p>&copy; 2022 All Rights are reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1415 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=David+Libre&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navlogo nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    background-color: #0690ad
+}
+
+nav h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 5px 10px 5px 10px;
+
+}
+
+#navbar li {
+    font-family: 'DM Sans', sans-serif;
+    margin: 5px 10px 5px 60px;
+}
+
+
+/* For highlighting nav bar elements when hover over it. */
+#navbar li a {
+    color: black;
+    margin-right: 5vw;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bolder;
+    transition: 0.5s ease;
+}
+
+/* For creating underline animation on nav bar */
+#navbar li a:hover {
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+
+#navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #a9f981;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#navbar li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.model_image img {
+    height: 60vh;
+    width: 70vw;
+}
+
+/* Homepage after nav bar */
+#context {
+    background-image: url("img/hero4.png");
+    height: 75vh;
+    width: 100%;
+    background-position: top 20% right 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10rem;
+}
+
+#context h4 {
+    font-size: 2rem;
+    margin: 5px 45px;
+}
+
+#context h1 {
+    font-family: 'David Libre', serif;
+    font-size: 4rem;
+    margin: 5px 45px;
+    color: #e4002b
+}
+
+#context h5 {
+    font-size: 1rem;
+    margin: 10px 45px 5px;
+    color: rgb(56, 46, 46);
+}
+
+#context h3 {
+    font-size: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    display: inline-block;
+    padding: 15px 15px;
+    font-style: italic;
+    background-color: #dfbfe6;
+    margin: 20px 10px 20px 120px;
+}
+
+/* Adding features in the boxes */
+#features {
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#features .boxes {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1px solid white;
+}
+
+#features .boxes_lines {
+    width: 110px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+/* Adding background color to text used in feature boxes */
+#features .boxes_lines h5 {
+    word-spacing: 4px;
+    margin-left: 10px;
+    padding: 5px 5px;
+    background-color: rgb(96, 209, 96);
+}
+
+/* boxes hover animation*/
+#features .boxes:hover {
+    background-color: #dfbfe6;
+    cursor: pointer;
+}
+
+/* Featured products text */
+#featured_products h2 {
+    word-spacing: 10px;
+    padding: 20px 10px 10px 10px;
+    font-size: 3rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured_products p {
+    word-spacing: 4px;
+    padding-bottom: 25px;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Featured products images */
+
+#featured_products_images .pro_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#featured_products_images .clothes {
+    width: 20%;
+    min-width: 238px;
+    padding: 10px 12px;
+    border: 1 solid rgb(37, 35, 35);
+    margin: 15px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#featured_products_images .clothes:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.80);
+}
+
+#featured_products_images .clothes img {
+    width: 18vw;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+/* For product description */
+.prod_description {
+    margin-left: 10px;
+}
+
+#featured_products_images .products_cart a {
+    margin-left: 16rem;
+    color: black;
+}
+
+#featured_products_images .stars {
+    color: #ffd000;
+}
+
+#banner_1 {
+    background-image: url(img/banner/b2.jpg);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#banner_1 h2 {
+    padding: 30px 30px;
+    font-size: 3.5rem;
+    color: white;
+}
+
+#banner_1 .btn_1 {
+    font-family: 'DM Sans', sans-serif;
+    padding: 15px 20px;
+}
+
+#banner_1 .btn_1:hover {
+    cursor: pointer;
+    background-color: #0690ad;
+    color: white;
+}
+
+/* New Products that are arrived */
+
+#New_Products h2 {
+    word-spacing: 10px;
+    padding: 20px 10px 10px 10px;
+    font-size: 3rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#New_Products p {
+    word-spacing: 4px;
+    padding-bottom: 25px;
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#banner_2 .ban_2_lines {
+    background-image: url(img/banner/b17.jpg);
+    width: 100px;
+    display: inline-block;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    width: 42%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
+    padding: 50px 25px;
+}
+
+#banner_2 .ban_3_lines {
+    background-image: url(img/banner/b10.jpg);
+    display: inline-block;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    width: 42%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-right: 50px;
+    padding: 50px 25px;
+}
+
+#banner_2 h2 {
+    color: black;
+    font-size: 50px;
+    padding: 0 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+#banner_2 h5 {
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#banner_2 h4 {
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    padding: 0px 20px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+#banner_2 .btn_2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0.5s ease;
+}
+
+#banner_2 .btn_2:hover {
+    background-color: #0690ad;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/*  Bottom Banner content  */
+
+#bottom_banner {
+    padding: 60px 50px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-color: rgb(68, 68, 110);
+    background-position: 20% 30%;
+}
+
+#bottom_banner h2 {
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#bottom_banner p {
+    color: #dfbfe6;
+    font-size: 15px;
+    padding: 0 10px;
+    word-spacing: 5px;
+    font-family: 'David Libre', serif;
+}
+
+#bottom_banner p span {
+    color: yellow;
+}
+
+#bottom_banner input {
+    height: 30px;
+    width: 25vw;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 4px;
+}
+
+#bottom_banner button {
+    height: 35px;
+    font-size: 15px;
+    margin-left: 10px;
+    width: 8vw;
+    border-radius: 5px;
+    background-color: #088178;
+    color: white;
+    border: 0.5px solid #dfbfe6;
+}
+
+#bottom_banner button:hover {
+    cursor: pointer;
+}
+
+/* Footer content */
+footer .footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .columns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .footerLogo {
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    padding: 15px 20px;
+    margin-left: 10px;
+}
+
+footer .contactsInfo {
+    padding: 15px 20px;
+    margin-left: 10px;
+}
+
+footer .contactsInfo h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+footer .follow {
+    padding: 15px 20px;
+    margin-left: 10px;
+}
+
+footer .icons {
+    word-spacing: 12px;
+}
+
+footer .follow h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+footer .aboutInfo a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'David Libre', serif;
+    font-weight: 500;
+}
+
+footer .aboutInfo h4 {
+    margin-top: 14vh;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer .aboutInfo {
+    margin-left: 5px;
+}
+
+footer .myAccountInfo a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'David Libre', serif;
+    font-weight: 500;
+}
+
+footer .myAccountInfo h4 {
+    margin-top: 14vh;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer .myAccountInfo {
+    margin-left: 5px;
+}
+
+footer .installingApp h4 {
+    margin-top: 14vh;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer .installingApp p {
+    margin-bottom: 10px;
+}
+
+footer .appsIcon img {
+    margin-right: 20px;
+    border: 1px solid navy;
+}
+
+footer .forCopyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'David Libre', serif;
+    font-size: 18px;
+    word-spacing: 4px;
+    font-weight: 550;
+}
+
+
+/*---------------------     SHOP PAGE STARTED       --------------------*/
+#shopPage-header{
+    background-image: url(img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#shopPage-header h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: 60px;
+}
+#shopPage-header p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
+    font-size: 30px;
+}
+
+/*-----------------------    FOR NUMBERS    ----------------------------*/
+#pageNumbers{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#pageNumbers a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 4px;
+    background-color: #0690ad;
+    font-size: 20px;
+    font-weight: 600;
+}
+#pageNumbers a i{
+    font-size: 20px;
+}
+/*---------------------     SHOP PAGE ENDED         --------------------*/
+
+/*---------------------     PRODUCT DETAILS PAGE STARTED         --------------------*/
+
+.mainProdImage img{
+    height: 20%;
+    width: 30%;
+    padding: 20px 30px;
+}
+.smallGroupProdImages{
+    display: inline-block;
+    padding: 0px;
+    cursor: pointer;
+}
+.smallGroupProdImages img{
+    height: 12.8vh;
+    width: 6.2vw;
+    margin: 0 0 10px 20px;
+    border: 0.5px solid grey;
+}
+
+/*---------------------     PRODUCT DETAILS PAGE ENDED         --------------------*/
+
+/*---------------------     BLOG DETAILS PAGE STARTED         --------------------*/
+
+#blogPage-header{
+    background-image: url(img/banner/b19.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#blogPage-header h1{
+    color: white;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: 50px;
+}
+#blogPage-header p{
+    color: white;
+    display: flex;
+    font-family: 'David Libre', serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
+    font-size: 20px;
+    word-spacing: 4px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+}
+.blog-image img{
+    width: 25vw;
+    height: 50vh;
+    padding: 30px 15px;
+    margin-left: 20px;
+}
+.blog-details p{
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+.blog-details h2{
+    padding: 0px 20px;
+    color: #da2f93;
+    font-family: 'EB Garamond', serif;
+}
+.blog-image-1{
+    display: block;
+}
+.blog-box h4{
+    padding: 10px 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: #001eca;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.blog-box h4:hover{
+    transform: translateY(-10px);
+}
+
+/*---------------------     BLOG DETAILS PAGE ENDED         --------------------*/
+
+
+/*---------------------     ABOUT US DETAILS PAGE STARTED         --------------------*/
+
+#aboutUS-Page-header{
+    background-image: url(img/about/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#aboutUS-Page-header h1{
+    color: white;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: 50px;
+}
+#aboutUS-Page-header p{
+    color: white;
+    display: flex;
+    font-family: 'David Libre', serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
+    font-size: 20px;
+    word-spacing: 4px;
+}
+.aboutUsDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side-part img{
+    height: 70vh;
+    width: 45vw;
+    padding: 25px 30px;
+}
+.right-side-part h2{
+    font-size: 35px;
+    color: #001eca;
+    margin-top: -10vh;
+    padding: 20px 0;
+    font-family: 'DM Sans', sans-serif;
+}
+.right-side-part p{
+    font-family: 'David Libre', serif;
+    font-size: 18px;
+    word-spacing: 4px;
+    width: 90%;
+}
+.downloadApp{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+}
+.downloadApp marquee{
+    text-align: center;
+    margin-top: 10px;
+}
+.downloadApp h1{
+    padding: 20px;
+}
+.downloadApp h1 span{
+    color: #da2f93;
+}
+.videoclip{
+    height: 100%;
+    width: 70%;
+    margin: 4vh 16vw;
+}
+.videoclip video{
+    height: 100%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+/*---------------------     ABOUT US DETAILS PAGE ENDED         --------------------*/
+
+
+/*---------------------     CONTACT US DETAILS PAGE STARTED         --------------------*/
+
+#ContactUS-Page-header{
+    background-image: url(img/about/banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+}
+#ContactUS-Page-header h1{
+    color: white;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    font-size: 50px;
+}
+#ContactUS-Page-header p{
+    color: white;
+    display: flex;
+    font-family: 'David Libre', serif;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
+    font-size: 20px;
+    word-spacing: 4px;
+}
+.contactUs-left-side-part{
+    font-family: 'DM Sans', sans-serif;
+    padding: 25px;
+}
+.contactUs-left-side-part h2{
+    padding: 5px 0px;
+}
+.contactUs-left-side-part h5{
+    padding: 10px 0px;
+}
+.contactUs-left-side-part p i{
+    margin: 0px 15px 0px 0px;
+}
+.contactUsDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.map iframe{
+    padding: 20px;
+    height: 60vh;
+    width: 50vw;
+}
+
+/*-----------   FORMS   ------------*/
+
+.form{
+    margin-top: 20px;
+    padding: 20px;
+}
+.form h4{
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+    margin-left: 20px;
+}
+.form h2{
+    font-family: 'David Libre', serif;
+    word-spacing: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.form .input-form{
+    padding: 0px 10px;
+    display: block;
+}
+.form input{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 60vw;
+    margin-left: 20px;
+}
+.form textarea{
+    padding: 10px;
+    width: 60vw;
+    margin-left: 20px;
+}
+.form .submit-btn{
+    height: 6vh;
+    width: 10vw;
+}
+.form button{
+    display: block;
+    margin-left: 30vw;
+    margin-top: 5vh;
+    background-color: #0690ad;
+    border: 0.5px solid #0690ad;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+.form button:hover{
+    transform: scale(1.1);
+}
+
+/*---------------------     CONTACT US DETAILS PAGE ENDED      --------------------*/
+
+
+/*---------------------     CART DETAILS PAGE STARTED      --------------------*/
+
+#your-Cart table {
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    padding: 20px;
+}
+table img{
+    width: 70px;
+}
+table{
+    text-align: center;
+}
+table thead td{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+table tbody td{
+    padding-top: 25px;
+    font-family: 'David Libre', serif;
+    word-spacing: 4px;
+}
+table tbody td input{
+    width: 4vw;
+}
+.coupon-and-total{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.coupon h2{
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+.coupon .coupon-input{
+    margin-left: 20px;
+}
+.coupon-input input{
+    width: 25vw;
+    height: 4vh;
+
+}
+.coupon button{
+    width: 6vw;
+    height: 6vh;
+    font-size: 15px;
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    background-color:#0690ad;
+    border: 0.5px solid white;
+    font-family: 'DM Sans', sans-serif;
+}
+.coupon button:hover{
+    transform: scale(1.1);
+}
+.cart-total{
+    border: 0.5px solid black;
+    padding: 20px;
+}
+.cart-total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.cart-total h4{
+    margin-top: 10px;
+    margin-left: 7vw;
+    font-size: 22px;
+    font-family: 'DM Sans', sans-serif;
+}
+.cart-total td{
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.cart-total .checkout{
+    width: 20vw;
+    height: 6vh;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    background-color: #0690ad;
+    cursor: pointer;
+    border: #0690ad;
+    margin-bottom: 20px;
+}
+
+.cart-total button:hover{
+    transform: scale(1.1);
+}
+/*---------------------     CART US DETAILS PAGE ENDED      --------------------*/
+
+
+.prodDetails{
+    margin-top: -80vh;
+    margin-left: 40vw;
+    width: 50%;
+    margin-bottom: 55vh;
+}
+.heading{
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+.heading h5{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.heading h2{
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+.heading h4{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.heading select{
+    font-size: 15px;
+    padding: 3.5px;
+    background-color: transparent;
+    border: 0.5px solid gray;
+}
+.heading input{
+    font-size: 15px;
+    padding: 3.5px;
+    width: 5vw;
+    margin-left: 2vw;
+    background-color: transparent;
+    border: 0.5px solid gray;
+}
+.heading button{
+    font-size: 15px;
+    padding: 5px 12px 5px 12px;
+    font-weight: 600;
+    margin-left: 2vw;
+    color: white;
+    background-color: #0690ad;
+    border: 0.5px solid gray;
+    cursor: pointer;
+}
+.heading h3{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+.heading p{
+    font-size: 20px;
+}
+.featuredprod{
+    margin-top: -35vh;
+}
+
+
+
+/*-------------------------------   FOR MOBILE PHONE SCREEN   ------------------------------------*/
+
+@media only screen and (max-width: 800px) {
+
+    #navlogo nav{
+        display: inline-block;
+    }
+    #navbar li {
+        display: inline;
+        margin: 10px 10px -25px -10px;
+    }
+    #navbar li a {
+        margin-right: 3.7vw;
+        font-size: 12px;
+    }
+
+/*--------------------------------      HOME PAGE CONTENT    -----------------------------------*/    
+
+    #context {
+        height: 28vh;
+        padding-top: 4rem;
+        background-position: top 25% left 30%;
+    }
+
+    #context h4 {
+        font-size: 1.2rem;
+        margin: -6px 20px;
+    }
+
+    #context h1 {
+        font-size: 1.8rem;
+        margin: 6px 20px;
+    }
+
+    #context h5 {
+        font-size: 1rem;
+        margin: 10px 20px 14px;
+        color: blue;
+    }
+
+    #context h3 {
+        padding: 10px;
+        margin: 8px 10px 20px 30px;
+    }
+
+    #features {
+        padding: 33px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #features .boxes {
+        margin: 15px 15px;
+    }
+
+    #featured_products h2 {
+        font-size: 2rem;
+    }
+
+    #featured_products_images .pro_images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #featured_products_images .clothes {
+        width: 15%;
+        min-width: 135px;
+        padding: 10px 10px;
+        margin: 15px 12px;
+    }
+
+    #featured_products_images .clothes img {
+        width: 28vw;
+    }
+
+    #featured_products_images .products_cart a {
+        margin-left: 4rem;
+    }
+
+    #banner_1 {
+        height: 20vh;
+        background-position: top 25% right 25%;
+    }
+
+    #banner_1 h2 {
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+
+    #banner_1 .btn_1 {
+        padding: 10px 15px;
+    }
+
+    #New_Products h2 {
+        word-spacing: 6px;
+        font-size: 2.2rem;
+    }
+
+    #New_Products p {
+        word-spacing: 2px;
+        font-size: 0.8rem;
+    }
+
+    #banner_2 .ban_2_lines {
+        width: 80%;
+        height: 24vh;
+        margin-left: 12px;
+    }
+
+    #banner_2 h2 {
+        font-size: 36px;
+    }
+
+    #banner_2 h5 {
+        font-size: 15px;
+    }
+
+    #banner_2 .ban_3_lines {
+        width: 85%;
+        height: 25vh;
+        margin-left: 32px;
+    }
+    #bottom_banner {
+        padding: 20px 5px;
+    }
+    #bottom_banner h2 {
+        font-size: 29px;
+        padding: 5px;
+    }
+    #bottom_banner input {
+        height: 24px;
+        width: 52vw;
+        margin-left: 8px;
+    }
+    #bottom_banner button {
+        height: 36px;
+        margin-left: 12px;
+        width: 20vw;
+    }
+    footer .columns {
+        margin-top: -27px;
+    }
+    footer .footerLogo {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    footer .follow {
+        margin-left: 112px;
+    }
+    footer .aboutInfo h4 {
+        margin-top: 3vh;
+    }
+    footer .aboutInfo {
+        margin-left: 30px;
+    }
+    footer .myAccountInfo {
+        margin-left: 2px;
+        width: 150px;
+    }
+    footer .myAccountInfo h4 {
+        margin-top: 3vh;
+    }
+
+    footer .installingApp h4 {
+        margin-top: 3vh;
+    }
+    footer .installingApp {
+        margin-left: 8vw;
+    }
+    footer .forCopyright {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    /*--------------    SHOP PAGE STARTED   ------------------*/
+
+    #shopPage-header {
+        height: 22vh;
+    }
+    #shopPage-header h1 {
+        padding-top: 6vh;
+        font-size: 30px;
+    }
+    #shopPage-header p {
+        padding-top: 1.5vh;
+        font-size: 16px;
+    }
+
+    /*--------------    SHOP PAGE ENDED   ------------------*/
+
+
+    /*--------------    Product_details page start   ------------------*/
+    .mainProdImage img{
+        width: 82%;
+    }
+    .smallGroupProdImages img {
+        height: 11.8vh;
+        width: 25.2vw;
+        margin: 0 0 10px 55px;
+    }
+    .prodDetails {
+        margin-top: 1vh;
+        margin-left: 5vw;
+        width: 90%;
+    }
+    .heading h5 {
+        font-size: 15px;
+    }
+    .heading h2 {
+        padding-bottom: 15px;
+        font-size: 20px;
+        display: flex;
+    }
+    .heading h4{
+        font-size: 20px;
+    }
+    .heading input {
+        width: 10vw;
+    }
+    .heading h3{
+        font-size: 20px;
+    }
+    .heading p{
+        font-size: 15px;
+        padding-top: 5px;
+        word-spacing: 4px;
+    }
+    .featuredprod {
+        margin-top: -52vh;
+    }
+    /*--------------    Product_details page end   ------------------*/
+
+    /*--------------    Blog page start   ------------------*/
+    #blogPage-header {
+        height: 15vh;
+    }
+    #blogPage-header h1{
+        padding-top: 2vh;
+        font-size: 30px;
+    }
+    #blogPage-header p{
+        font-size: 16px;
+    }
+    .blog-image img {
+        width: 81vw;
+        height: 40vh;
+    }
+    #blog .blog-box {
+        display: block;
+    }
+    .blog-details h2 {
+        padding: 0px 30px;
+    }
+    #pageNumbers a {
+        font-size: 16px;
+    }
+    .blog-details p {
+        padding: 10px 30px;
+    }
+    #pageNumbers a i {
+        font-size: 16px;
+    }
+    .blog-box h4 {
+        padding: 10px 30px;
+    }
+    /*--------------    Blog page end   ------------------*/
+
+    /*--------------    About Us page start   ------------------*/
+
+    #aboutUS-Page-header {
+        height: 18vh;
+    }
+    #aboutUS-Page-header h1 {
+        padding-top: 4vh;
+        font-size: 29px;
+    }
+    #aboutUS-Page-header p{
+        padding-top: 1.5vh;
+        font-size: 14px;
+    }
+    #aboutUS-Page-headabout{
+        padding-top: 1.5vh;
+        font-size: 12px;
+    }
+    .aboutUsDetails {
+        display: inline-block;
+    }
+    .left-side-part img {
+        height: 40vh;
+        width: 83vw;
+        padding: 20px 20px;
+        margin-left: 12px;
+    }
+    .right-side-part h2 {
+        margin-top: -2vh;
+        margin-left: 50px;
+    }
+    .right-side-part p {
+        width: 90%;
+        margin-left: 25px;
+    }
+    .downloadApp marquee {
+        width: 80%;
+    }
+    .videoclip {
+        width: 77%;
+        margin: 4vh 12vw;
+    }
+    .videoclip video {
+        width: 100%;
+    }
+
+    /*--------------    About Us page end   ------------------*/
+
+
+    /*--------------    Contact Us page start   ------------------*/
+    #ContactUS-Page-header {
+        height: 22vh;
+    }
+    #ContactUS-Page-header h1 {
+        padding-top: 4vh;
+        font-size: 38px;
+    }
+    #ContactUS-Page-header p {
+        font-size: 13px;
+    }
+    .contactUsDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .map iframe {
+        height: 38vh;
+        width: 80vw;
+    }
+    .form .submit-btn {
+        height: 5vh;
+        width: 25vw;
+    }
+    .form button {
+        margin-top: 2vh;
+        margin-left: 25vw;
+    }
+    .form {
+        margin-top: 1px;
+    }
+
+
+    /*--------------    Contact Us page end   ------------------*/
+
+
+    /*--------------    CART page start   ------------------*/
+    #your-Cart{
+        overflow-x: auto;
+    }
+    table thead td {
+        font-size: 11px;
+    }
+    #your-Cart table {
+        width: 210%;
+    }
+    .fa-regular, .far {
+        font-size: 10px;
+    }
+    table tbody td {
+        font-size: 12px;
+    }
+    table tbody td input {
+        width: 12vw;
+    }
+    .coupon h2 {
+        margin-top: 30px;
+    }
+    .coupon-input input {
+        width: 54vw;
+        height: 3vh;
+    }
+    .coupon button {
+	width: 29vw;
+	height: 5vh;
+	font-size: 18px;
+	margin-bottom: 20px;
+    }
+    .cart-total {
+        margin-left: 18vw;
+    }
+    .cart-total h4 {
+        margin-bottom: 20px;
+    }
+    .cart-total .checkout {
+        width: 36vw;
+        height: 8vh;
+        margin-left: 20px;
+    }
+    footer .columns {
+        margin-top: 25px;
+    }
+
+
+    /*--------------    CART Us page end   ------------------*/
+
+}
